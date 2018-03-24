@@ -1,0 +1,54 @@
+.square {
+  width:200px;
+  height:200px;
+  float:left;
+  background-color:#eeeeee;
+}
+.row {
+  text-align:center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.one, .two, .four, .five {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.three, .six {
+  border-bottom: 2px solid black;
+}
+
+.seven, .eight {
+  border-right:2px solid black;
+}
+
+.first {
+  background-color:red;
+
+}
+
+.first:before {
+  content: "X";
+  font-size:200px;
+}
+
+.second {
+  background-color:blue;
+}
+
+.second:before {
+  content: "O";
+  font-size:200px;
+}
+
+#restart {
+  background-color:orange;
+  padding:20px;
+  font-size:20px;
+  outline:none;
+  text-align:center;
+}
